@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+.blinkit-navbar{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    position: sticky;
+    top: 0px;
+    height: 86px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-inline: 20px; */
+}
+.vertical{
+    border-right: 1px solid rgb(238, 238, 238);
+    height: 100%;
+}
+.location h5{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 18px;
+}
+.location p{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.searchbar{
+    background: rgb(248, 248, 248);
+    border-radius: 12px;
+    border: 1px solid rgb(232, 232, 232);
+    width: 30vw;
+    padding: 15px;
+}
+.searchbar input{
+    border: none;
+    width: 90%;
+    background-color: transparent;
+}
+/* use for remove the border of input */
+/* focus is pseudo class */
+.searchbar input:focus{
+    outline: none;
+}
+.btn1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+.btn2{
+    background-color: rgb(12, 131, 31);
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 60%;
+    width: 120px;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+}
+.hero img{
+    width: 90%;
+    height: 90%;
+}
+.scrollable-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Overflow-x make scrollable to x axis */
+    overflow-x: auto;
+    margin-inline: auto;
+    width: 90vw;
+}
+.list{
+    width: 100%;
+    margin-inline: auto;
+    /* White -space: nowrap
+    Forcefully uses blank spaces
+    and fill it */
+    white-space: nowrap;
+}
+.list div{
+    display: inline-block;
+    margin: 10px;
+}
+/* hide scrollbar */
+::-webkit-scrollbar{
+    display: none;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin-inline: auto;
+}
+.items{
+    width: 90vw;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row-category{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    overflow-x: auto;
+}
+.card{
+    width: 180px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0,0.9);
+    border: 0.1px solid rgb(192, 190, 190);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.card .time{
+    border-radius: 4px;
+    padding: 0px 4px;
+    background-color: rgb(248, 248, 248);
+}
+.product-name{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    width: 100%;
+    height: 36px;
+}
+.card .product{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    width: 66px;
+    height: 31px;
+    border: 1px solid rgb(49, 134, 22);
+    color: rgb(49, 134, 22);
+    background-color: rgb(247, 255, 249);
+    border-radius: 7px;
+}
+.my-footer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-inline: auto;
+    width: 90vw;
+}
+.table-1{
+    flex: 2;
+}
+.table-2{
+    flex: 4;
+}
+.row-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+td{
+    padding: 3px 20px;
+    color: #666666;
+    font-size: 1.2vw;
+    text-align: center;
+    cursor: pointer;
+}
+.row-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row-2-col-1{
+    width: 30vw;
+}
+.row-2-col-2{
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.row-2-col-2 img{
+    width: 10vw;
+}
+.row-2-col-3{
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.row-2-col-3>a{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row-3{
+    color:#666666;
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+}        
+@media screen and (max-width:480px){
+    .location,.searchbar,table{
+        display: none;
+    }
+}
